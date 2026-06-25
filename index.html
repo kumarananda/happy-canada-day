@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
   lang="en"
+  style="color-scheme: light only"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office"
@@ -8,6 +9,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
     <meta name="x-apple-disable-message-reformatting" />
     <meta
       name="format-detection"
@@ -57,6 +60,34 @@
         width: 100% !important;
         height: 100% !important;
         background-color: #f4f4f5;
+        color-scheme: light only;
+        supported-color-schemes: light only;
+      }
+      .bg-white {
+        background-color: #fffffe !important;
+        background-image: linear-gradient(#fffffe, #fffffe) !important;
+      }
+      .bg-cream {
+        background-color: #f8f1e1 !important;
+        background-image: linear-gradient(#f8f1e1, #f8f1e1) !important;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        .email-outer,
+        .bg-white {
+          background-color: #fffffe !important;
+          background-image: linear-gradient(#fffffe, #fffffe) !important;
+        }
+        .bg-cream,
+        .catering-card-label {
+          background-color: #f8f1e1 !important;
+          background-image: linear-gradient(#f8f1e1, #f8f1e1) !important;
+          color: #000000 !important;
+        }
+        .catering-card-link,
+        .catering-cards-heading {
+          color: #a71e22 !important;
+        }
       }
       .email-container {
         max-width: 600px;
@@ -66,29 +97,17 @@
         color: #c8102e;
         text-decoration: underline;
       }
-      .section-2-wrap {
-        position: relative;
+      .section-2-stack {
         max-width: 600px;
         width: 100%;
-        margin: -20px auto 0;
-        background-color: transparent;
+        background-color: #c41e3a;
       }
-      .section-2-bg {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        display: block;
+      .section-2-bg-cell {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
       }
-      .section-2-content {
-        position: absolute;
-        top: 12%;
-        left: 0;
-        right: 0;
-        padding: 0 20px;
-        z-index: 2;
-        box-sizing: border-box;
-      }
-      .section-2-image-gap {
+      .section-2-gap {
         height: 20px;
         font-size: 0;
         line-height: 0;
@@ -228,15 +247,8 @@
           width: 100% !important;
           max-width: 100% !important;
         }
-        .section-2-content {
-          padding-left: 12px !important;
-          padding-right: 12px !important;
-        }
-        .section-2-image-gap {
+        .section-2-gap {
           height: 16px !important;
-        }
-        .section-2-wrap {
-          margin-top: -12px !important;
         }
         .deals-row-pickup,
         .deals-row-delivery,
@@ -301,28 +313,40 @@
     </style>
   </head>
   <body
+    bgcolor="#f4f4f5"
     style="
       margin: 0;
       padding: 0;
       background-color: #f4f4f5;
+      background-image: linear-gradient(#f4f4f5, #f4f4f5);
       font-family: Arial, Helvetica, sans-serif;
+      color-scheme: light only;
     "
   >
-    <div
-      style="
-        display: none;
-        max-height: 0;
-        overflow: hidden;
-        mso-hide: all;
-        font-size: 1px;
-        line-height: 1px;
-        color: #f4f4f5;
-        opacity: 0;
-      "
+    <!-- ESP: paste this file's HTML in your email tool's CODE editor — do not copy from browser preview -->
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="display: none; max-height: 0; overflow: hidden; mso-hide: all"
     >
-      Celebrate Canada Day with 50% off Happy Hour, pickup and delivery deals,
-      and catering from BanCan Kitchen.
-    </div>
+      <tr>
+        <td
+          style="
+            font-size: 1px;
+            line-height: 1px;
+            color: #f4f4f5;
+            opacity: 0;
+            mso-hide: all;
+          "
+        >
+          Celebrate Canada Day with 50% off Happy Hour, pickup and delivery
+          deals, and catering from BanCan Kitchen.
+        </td>
+      </tr>
+    </table>
     <table
       role="presentation"
       width="100%"
@@ -331,26 +355,53 @@
       border="0"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td
+          align="center"
+          bgcolor="#fffffe"
+          class="email-outer bg-white"
+          data-ogsb="#fffffe"
+          data-ogsc="#fffffe"
+          style="
+            padding: 0;
+            background-color: #fffffe;
+            background-image: linear-gradient(#fffffe, #fffffe);
+          "
+        >
           <!-- Section 1: Hero banner -->
           <table
             role="presentation"
-            class="email-container"
+            class="email-container bg-white"
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="max-width: 600px; width: 100%; background-color: #ffffff"
+            bgcolor="#fffffe"
+            style="
+              max-width: 600px;
+              width: 100%;
+              background-color: #fffffe;
+              background-image: linear-gradient(#fffffe, #fffffe);
+            "
           >
             <tr>
-              <td style="padding: 0; line-height: 0; font-size: 0">
+              <td
+                bgcolor="#fffffe"
+                style="
+                  padding: 0;
+                  line-height: 0;
+                  font-size: 0;
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
+                  color-scheme: light only;
+                "
+              >
                 <a
                   href="https://bancankitchen.ca/reservation#reservation-form"
                   target="_blank"
                   style="text-decoration: none; display: block"
                 >
                   <img
-                    src="https://admin.bancankitchen.ca/files/BanCan-Happy-Canda-Day-Hero.jpg"
+                    src="https://admin.bancankitchen.ca/files/Toronto-Happy-Canada-Day-BanCan-Hero-Section.png"
                     alt="Happy Canada Day - Bancan Kitchen. Celebrate with Different Roots. One Home. One Canada."
                     width="600"
                     style="
@@ -369,353 +420,221 @@
           <!-- Section 2: Deals -->
           <table
             role="presentation"
-            class="email-container"
+            class="email-container bg-white"
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
+            bgcolor="#fffffe"
             style="
               max-width: 600px;
               width: 100%;
-              background-color: #ffffff;
-              padding-top: 20px;
+              background-color: #fffffe;
+              background-image: linear-gradient(#fffffe, #fffffe);
             "
           >
             <tr>
-              <td style="padding: 0; background-color: transparent">
-                <!--[if mso]>
-                  <table
-                    role="presentation"
-                    width="600"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
+              <td
+                align="center"
+                class="section-2-bg-cell"
+                background="https://admin.bancankitchen.ca/files/BanCan-Canada-Day.png"
+                width="600"
+                valign="top"
+                style="
+                  padding: 0;
+                  background-image: url(&quot;https://admin.bancankitchen.ca/files/BanCan-Canada-Day.png&quot;);
+                  background-repeat: no-repeat;
+                  background-position: center top;
+                  background-size: 100% auto;
+                  line-height: 0;
+                  font-size: 0;
+                "
+              >
+                <!--[if gte mso 9]>
+                  <v:rect
+                    xmlns:v="urn:schemas-microsoft-com:vml"
+                    fill="true"
+                    stroke="false"
+                    style="width: 600px"
                   >
-                    <tr>
-                      <td
-                        width="600"
-                        height="519"
-                        valign="top"
-                        background="https://admin.bancankitchen.ca/files/section-2-bg.png"
-                        bgcolor="#c41e3a"
-                      >
-                        <v:rect
-                          xmlns:v="urn:schemas-microsoft-com:vml"
-                          fill="true"
-                          stroke="false"
-                          style="width: 600px; height: 519px"
-                        >
-                          <v:fill
-                            type="frame"
-                            src="https://admin.bancankitchen.ca/files/section-2-bg.png"
-                            color="#c41e3a"
-                          />
-                          <v:textbox
-                            inset="0,0,0,0"
-                            style="mso-fit-shape-to-text: true"
-                          >
-                            <table
-                              role="presentation"
-                              width="100%"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  height="55"
-                                  style="
-                                    font-size: 0;
-                                    line-height: 0;
-                                    mso-line-height-rule: exactly;
-                                  "
-                                >
-                                  &nbsp;
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0 20px;
-                                    line-height: 0;
-                                    font-size: 0;
-                                  "
-                                >
-                                  <table
-                                    role="presentation"
-                                    width="560"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        style="
-                                          padding: 0;
-                                          line-height: 0;
-                                          font-size: 0;
-                                        "
-                                      >
-                                        <a
-                                          href="https://bancankitchen.com/happy-hour"
-                                          target="_blank"
-                                          style="
-                                            text-decoration: none;
-                                            display: block;
-                                          "
-                                        >
-                                          <img
-                                            src="https://admin.bancankitchen.ca/files/BanCan-Canada-Day-Happy-Hour-Menu.png"
-                                            alt="Happy Hour Daily 2 PM-5 PM, 8 PM-Close. 50% off on selected plates and pours."
-                                            width="560"
-                                            height="220"
-                                            style="display: block; border: 0"
-                                          />
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  height="20"
-                                  style="
-                                    font-size: 0;
-                                    line-height: 0;
-                                    mso-line-height-rule: exactly;
-                                  "
-                                >
-                                  &nbsp;
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0 20px;
-                                    line-height: 0;
-                                    font-size: 0;
-                                  "
-                                >
-                                  <table
-                                    role="presentation"
-                                    width="560"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        class="deals-row-pickup"
-                                        width="274"
-                                        valign="top"
-                                        style="
-                                          padding: 0;
-                                          line-height: 0;
-                                          font-size: 0;
-                                        "
-                                      >
-                                        <a
-                                          href="https://bancankitchen.com/order-pickup"
-                                          target="_blank"
-                                          style="
-                                            text-decoration: none;
-                                            display: block;
-                                          "
-                                        >
-                                          <img
-                                            src="https://admin.bancankitchen.ca/files/left-side-pick-up-offer.png"
-                                            alt="Pick Up Offer 15% off your whole pickup order."
-                                            width="274"
-                                            height="160"
-                                            style="
-                                              display: block;
-                                              width: 100%;
-                                              max-width: 274px;
-                                              height: auto;
-                                              border: 0;
-                                            "
-                                          />
-                                        </a>
-                                      </td>
-                                      <td
-                                        class="deals-row-gap"
-                                        width="12"
-                                        style="
-                                          font-size: 0;
-                                          line-height: 0;
-                                          mso-line-height-rule: exactly;
-                                        "
-                                      >
-                                        &nbsp;
-                                      </td>
-                                      <td
-                                        class="deals-row-delivery"
-                                        width="274"
-                                        valign="top"
-                                        style="
-                                          padding: 0;
-                                          line-height: 0;
-                                          font-size: 0;
-                                        "
-                                      >
-                                        <a
-                                          href="https://bancankitchen.com/order-delivery"
-                                          target="_blank"
-                                          style="
-                                            text-decoration: none;
-                                            display: block;
-                                          "
-                                        >
-                                          <img
-                                            src="https://admin.bancankitchen.ca/files/right-side-delivery-deals.png"
-                                            alt="Delivery deals from $0.99 and $2.99."
-                                            width="274"
-                                            height="160"
-                                            style="
-                                              display: block;
-                                              width: 100%;
-                                              max-width: 274px;
-                                              height: auto;
-                                              border: 0;
-                                            "
-                                          />
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  height="65"
-                                  style="
-                                    font-size: 0;
-                                    line-height: 0;
-                                    mso-line-height-rule: exactly;
-                                  "
-                                >
-                                  &nbsp;
-                                </td>
-                              </tr>
-                            </table>
-                          </v:textbox>
-                        </v:rect>
-                      </td>
-                    </tr>
-                  </table>
+                    <v:fill
+                      type="frame"
+                      src="https://admin.bancankitchen.ca/files/BanCan-Canada-Day.png"
+                      color="#c41e3a"
+                    />
+                    <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true">
                 <![endif]-->
-                <!--[if !mso]><!-->
-                <div class="section-2-wrap">
-                  <img
-                    class="section-2-bg"
-                    src="https://admin.bancankitchen.ca/files/BanCan-Canada-Day.png"
-                    alt=""
-                    width="600"
-                    height="1134"
-                    style="
-                      width: 100%;
-                      max-width: 600px;
-                      height: auto;
-                      display: block;
-                    "
-                  />
-                  <div class="section-2-content">
-                    <div class="happy-hour-card">
-                      <a
-                        href="https://bancankitchen.ca/happy-hour"
-                        target="_blank"
-                        style="text-decoration: none; display: block"
-                      >
-                        <img
-                          src="https://admin.bancankitchen.ca/files/BanCan-Canada-Day-Happy-Hour-Menu.png"
-                          alt="Happy Hour Daily 2 PM-5 PM, 8 PM-Close. 50% off on selected plates and pours."
-                          width="560"
-                          style="
-                            width: 100%;
-                            max-width: 560px;
-                            height: auto;
-                            display: block;
-                            border: 0;
-                          "
-                        />
-                      </a>
-                    </div>
-                    <div class="section-2-image-gap">&nbsp;</div>
-                    <table
-                      role="presentation"
-                      class="deals-row"
-                      width="560"
-                      cellpadding="0"
-                      cellspacing="0"
-                      border="0"
-                      style="width: 100%; max-width: 560px"
+                <table
+                  role="presentation"
+                  class="section-2-stack"
+                  width="600"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="
+                    max-width: 600px;
+                    width: 100%;
+                    background-color: transparent;
+                  "
+                >
+                  <tr>
+                    <td
+                      height="55"
+                      style="
+                        height: 55px;
+                        font-size: 0;
+                        line-height: 0;
+                        mso-line-height-rule: exactly;
+                      "
                     >
-                      <tr>
-                        <td
-                          class="deals-row-pickup"
-                          width="274"
-                          valign="top"
-                          style="padding: 0; line-height: 0; font-size: 0"
-                        >
-                          <a
-                            href="https://order.bancankitchen.ca/"
-                            target="_blank"
-                            style="text-decoration: none; display: block"
+                      &nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      style="padding: 0 20px; line-height: 0; font-size: 0"
+                    >
+                      <table
+                        role="presentation"
+                        class="happy-hour-card"
+                        width="560"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="max-width: 560px; width: 100%"
+                      >
+                        <tr>
+                          <td style="padding: 0; line-height: 0; font-size: 0">
+                            <a
+                              href="https://bancankitchen.ca/happy-hour"
+                              target="_blank"
+                              style="text-decoration: none; display: block"
+                            >
+                              <img
+                                src="https://admin.bancankitchen.ca/files/BanCan-Canada-Day-Happy-Hour-Menu.png"
+                                alt="Happy Hour Daily 2 PM-5 PM, 8 PM-Close. 50% off on selected plates and pours."
+                                width="560"
+                                height="220"
+                                style="
+                                  width: 100%;
+                                  max-width: 560px;
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="section-2-gap"
+                      height="20"
+                      style="
+                        height: 20px;
+                        font-size: 0;
+                        line-height: 0;
+                        mso-line-height-rule: exactly;
+                      "
+                    >
+                      &nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      style="padding: 0 20px; line-height: 0; font-size: 0"
+                    >
+                      <table
+                        role="presentation"
+                        class="deals-row"
+                        width="560"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="width: 100%; max-width: 560px"
+                      >
+                        <tr>
+                          <td
+                            class="deals-row-pickup"
+                            width="274"
+                            valign="top"
+                            style="padding: 0; line-height: 0; font-size: 0"
                           >
-                            <img
-                              src="https://admin.bancankitchen.ca/files/BanCan-15Percent-Pick-Up-Offer.png"
-                              alt="Pick Up Offer 15% off your whole pickup order."
-                              width="274"
-                              style="
-                                width: 100%;
-                                max-width: 274px;
-                                height: auto;
-                                display: block;
-                                border: 0;
-                              "
-                            />
-                          </a>
-                        </td>
-                        <td
-                          class="deals-row-gap"
-                          width="12"
-                          style="font-size: 0; line-height: 0"
-                        >
-                          &nbsp;
-                        </td>
-                        <td
-                          class="deals-row-delivery"
-                          width="274"
-                          valign="top"
-                          style="padding: 0; line-height: 0; font-size: 0"
-                        >
-                          <a
-                            href="https://order.bancankitchen.ca/"
-                            target="_blank"
-                            style="text-decoration: none; display: block"
+                            <a
+                              href="https://order.bancankitchen.ca/"
+                              target="_blank"
+                              style="text-decoration: none; display: block"
+                            >
+                              <img
+                                src="https://admin.bancankitchen.ca/files/BanCan-15Percent-Pick-Up-Offer.png"
+                                alt="Pick Up Offer 15% off your whole pickup order."
+                                width="274"
+                                style="
+                                  width: 100%;
+                                  max-width: 274px;
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                "
+                              />
+                            </a>
+                          </td>
+                          <td
+                            class="deals-row-gap"
+                            width="12"
+                            style="font-size: 0; line-height: 0"
                           >
-                            <img
-                              src="https://admin.bancankitchen.ca/files/BanCan-99Cent-Delivery-Online-Order.png"
-                              alt="Delivery deals from $0.99 and $2.99."
-                              width="274"
-                              style="
-                                width: 100%;
-                                max-width: 274px;
-                                height: auto;
-                                display: block;
-                                border: 0;
-                              "
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <!--<![endif]-->
+                            &nbsp;
+                          </td>
+                          <td
+                            class="deals-row-delivery"
+                            width="274"
+                            valign="top"
+                            style="padding: 0; line-height: 0; font-size: 0"
+                          >
+                            <a
+                              href="https://order.bancankitchen.ca/"
+                              target="_blank"
+                              style="text-decoration: none; display: block"
+                            >
+                              <img
+                                src="https://admin.bancankitchen.ca/files/BanCan-99Cent-Delivery-Online-Order.png"
+                                alt="Delivery deals from $0.99 and $2.99."
+                                width="274"
+                                style="
+                                  width: 100%;
+                                  max-width: 274px;
+                                  height: auto;
+                                  display: block;
+                                  border: 0;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="65"
+                      style="
+                        height: 65px;
+                        font-size: 0;
+                        line-height: 0;
+                        mso-line-height-rule: exactly;
+                      "
+                    >
+                      &nbsp;
+                    </td>
+                  </tr>
+                </table>
+                <!--[if gte mso 9]></v:textbox></v:rect><![endif]-->
               </td>
             </tr>
           </table>
@@ -723,24 +642,43 @@
           <!-- Section 3: Home message -->
           <table
             role="presentation"
-            class="email-container"
+            class="email-container bg-white"
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="max-width: 600px; width: 100%; background-color: #ffffff"
+            bgcolor="#fffffe"
+            style="
+              max-width: 600px;
+              width: 100%;
+              background-color: #fffffe;
+              background-image: linear-gradient(#fffffe, #fffffe);
+            "
           >
             <tr>
               <td
                 class="section-3-gap"
                 height="20"
-                style="background-color: #ffffff"
+                style="
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
+                "
               >
                 &nbsp;
               </td>
             </tr>
             <tr>
-              <td style="padding: 0 20px; line-height: 0; font-size: 0">
+              <td
+                bgcolor="#fffffe"
+                class="bg-white"
+                style="
+                  padding: 0 20px;
+                  line-height: 0;
+                  font-size: 0;
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
+                "
+              >
                 <img
                   src="https://admin.bancankitchen.ca/files/BanCan-CandaDay-History.png"
                   alt="Home is more than a place. Happy Canada Day from the BanCan Kitchen family."
@@ -759,18 +697,27 @@
           <!-- Section 4: Catering -->
           <table
             role="presentation"
-            class="email-container"
+            class="email-container bg-white"
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="max-width: 600px; width: 100%; background-color: #ffffff"
+            bgcolor="#fffffe"
+            style="
+              max-width: 600px;
+              width: 100%;
+              background-color: #fffffe;
+              background-image: linear-gradient(#fffffe, #fffffe);
+            "
           >
             <tr>
               <td
                 class="section-3-gap"
                 height="20"
-                style="background-color: #ffffff"
+                style="
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
+                "
               >
                 &nbsp;
               </td>
@@ -803,18 +750,27 @@
           <!-- Section 5: Catering cards -->
           <table
             role="presentation"
-            class="email-container"
+            class="email-container bg-white"
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="max-width: 600px; width: 100%; background-color: #ffffff"
+            bgcolor="#fffffe"
+            style="
+              max-width: 600px;
+              width: 100%;
+              background-color: #fffffe;
+              background-image: linear-gradient(#fffffe, #fffffe);
+            "
           >
             <tr>
               <td
                 class="section-3-gap"
                 height="20"
-                style="background-color: #ffffff"
+                style="
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
+                "
               >
                 &nbsp;
               </td>
@@ -1077,13 +1033,17 @@
                           </tr>
                           <tr>
                             <td
-                              class="catering-card-label"
+                              class="catering-card-label bg-cream"
                               align="center"
                               valign="middle"
                               height="80"
                               bgcolor="#f8f1e1"
                               style="
                                 background-color: #f8f1e1;
+                                background-image: linear-gradient(
+                                  #f8f1e1,
+                                  #f8f1e1
+                                );
                                 height: 80px;
                                 min-height: 80px;
                                 padding: 10px 6px;
@@ -1194,13 +1154,17 @@
                           </tr>
                           <tr>
                             <td
-                              class="catering-card-label"
+                              class="catering-card-label bg-cream"
                               align="center"
                               valign="middle"
                               height="80"
                               bgcolor="#f8f1e1"
                               style="
                                 background-color: #f8f1e1;
+                                background-image: linear-gradient(
+                                  #f8f1e1,
+                                  #f8f1e1
+                                );
                                 height: 80px;
                                 min-height: 80px;
                                 padding: 10px 6px;
@@ -1311,13 +1275,17 @@
                           </tr>
                           <tr>
                             <td
-                              class="catering-card-label"
+                              class="catering-card-label bg-cream"
                               align="center"
                               valign="middle"
                               height="80"
                               bgcolor="#f8f1e1"
                               style="
                                 background-color: #f8f1e1;
+                                background-image: linear-gradient(
+                                  #f8f1e1,
+                                  #f8f1e1
+                                );
                                 height: 80px;
                                 min-height: 80px;
                                 padding: 10px 6px;
@@ -1428,13 +1396,17 @@
                           </tr>
                           <tr>
                             <td
-                              class="catering-card-label"
+                              class="catering-card-label bg-cream"
                               align="center"
                               valign="middle"
                               height="80"
                               bgcolor="#f8f1e1"
                               style="
                                 background-color: #f8f1e1;
+                                background-image: linear-gradient(
+                                  #f8f1e1,
+                                  #f8f1e1
+                                );
                                 height: 80px;
                                 min-height: 80px;
                                 padding: 10px 6px;
@@ -1464,13 +1436,17 @@
             </tr>
             <tr>
               <td
-                class="footer-zigzag"
+                class="footer-zigzag bg-white"
+                bgcolor="#fffffe"
+                data-ogsb="#fffffe"
+                data-ogsc="#fffffe"
                 style="
                   padding: 0;
                   margin: 0;
                   line-height: 0;
                   font-size: 0;
-                  background-color: #ffffff;
+                  background-color: #fffffe;
+                  background-image: linear-gradient(#fffffe, #fffffe);
                 "
               >
                 <img
